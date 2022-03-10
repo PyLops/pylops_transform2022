@@ -1,0 +1,8 @@
+numpy>=1.15.0
+scipy>=1.4.0
+matplotlib
+pympler
+pylops==1.18.0
+pyproximal
+scooby
+segyio
