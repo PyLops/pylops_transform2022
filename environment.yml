@@ -3,17 +3,20 @@ channels:
   - defaults
   - conda-forge
   - numba
+  - pytorch
 dependencies:
   - python>=3.6.4
+  - pip
   - numpy>=1.15.0
   - scipy>=1.4.0
   - matplotlib
-  - pylops==1.18.0
-  - pywavelets
+  - pylops
   - ipython
   - jupyter
+  - pytorch=1.8.1
+  - torchvision
+  - tqdm 
   - pip:
-    - pympler
+    - torchsummary
+    - pylops-gpu
     - pyproximal
-    - scooby
-    - segyio
