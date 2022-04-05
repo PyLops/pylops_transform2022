@@ -19,6 +19,7 @@ def AFISTA(Op, b, niter, alpha, eps, x_true, decay=None, acceleration=True, weig
     do_update = 1
     if decay is None:
         decay = np.ones(niter)
+    
     # start AFISTA
     for i in range(niter):
 
@@ -34,13 +35,8 @@ def AFISTA(Op, b, niter, alpha, eps, x_true, decay=None, acceleration=True, weig
                            
         # update the weights for AFISTA. w_k = 1/|x_k|
         if acceleration and do_update == weight_update:
-#             weights = 1 / np.maximum( np.abs( x_thresh_new ), delta )
             weights = 1 / ( np.abs( x_thresh_new ) + delta )
             do_update = 0
-
-        # if i > 50:
-        #     acceleration = False
-        #     weights = np.ones(n)
         
         # Nesterov step
         t_new = 1/2 + 1/2 * np.sqrt( 1 + 4 * t_old ** 2 )
