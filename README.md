@@ -21,8 +21,9 @@ to setup your environment)
 
 | Session   | Exercise (Github) | Exercise (Colab) |
 |-----------|------------------|------------------|
-| 1: A tour of Seismic Decon | [Link](Decon.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PyLops/pylops_transform2022/blob/master/Decon.ipynb)  |
-| 2: PyLops v2, what's that? | [Link](PyLops_v2.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PyLops/pylops_transform2022/blob/master/PyLops_v2.ipynb) |
+| 1: A tour of Seismic Decon | [Link](Decon.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PyLops/pylops_transform2022/blob/main/Decon.ipynb)  |
+| 2: PyLops v2, what's that? | [Link](PyLops_v2.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PyLops/pylops_transform2022/blob/main/PyLops_v2.ipynb) |
+
 
 ## License
 The material in this repository is open and can be modified and redistributed according to the chosen licences.

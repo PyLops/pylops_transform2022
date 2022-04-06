@@ -28,15 +28,16 @@ def set_seed(seed):
     return True
 
 
-def weights_init(m):
-    """Initialize weights
-    """
-    if isinstance(m, nn.Conv1d) or isinstance(m, nn.ConvTranspose1d):
-        torch.nn.init.normal_(m.weight, 0.0, 0.02)
-    if isinstance(m, nn.BatchNorm1d):
-        torch.nn.init.normal_(m.weight, 0.0, 0.02)
-        torch.nn.init.constant_(m.bias, 0)
-
+def init_weights(model):
+    if type(model) == nn.Linear:
+        torch.nn.init.xavier_uniform(model.weight)
+        if model.bias is not None:
+            model.bias.data.fill_(0.01)
+    elif type(model) == nn.Conv1d or type(model) == nn.ConvTranspose1d:
+        torch.nn.init.xavier_uniform(model.weight)
+        if model.bias is not None:
+            model.bias.data.fill_(0.01)
+        
 
 class ContractingBlock(nn.Module):
     """Contracting block
