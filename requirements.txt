@@ -10,3 +10,4 @@ tqdm
 torchsummary
 pylops-gpu
 pyproximal
+sympy
