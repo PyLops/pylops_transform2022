@@ -7,7 +7,7 @@ The material covered during the tutorial is composed of 2 jupyter notebooks. Par
 
 - local Python installation (follow these [instructions](https://pylops.readthedocs.io/en/latest/installation.html)
 to setup your environment)
-- a Cloud-hosted environment such as [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pylops/pylops_transform2022/main)
+- a Cloud-hosted environment such as [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PyLops/pylops_transform2022/main)
   or  Google Colab (use links provided below to open the notebook directly in Colab).
 
 ## Instructor
